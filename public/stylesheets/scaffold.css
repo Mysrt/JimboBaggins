@@ -39,20 +39,23 @@ div#header {
 }
 
 div.rounded {
-  -moz-border-radius: 20px !important;
-  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
 }
 
-div#content_wrapper {
-  margin: 100px;
+div#post_wrapper {
+  margin: 25px 100px 25px 100px;
   background-color: #440000;
   width: 60%;
-  height: 1000px;
 }
 
-div#content {
+div#post {
   text-align: left;
   padding: 20px;
+  font-size: 1.2em;
+  font-family: "georgia", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 div#footer_wrap {
