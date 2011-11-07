@@ -37,14 +37,12 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
-  # POST /posts
-  # POST /posts.xml
   def create
     @post = Post.new(params[:post])
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to(@post, :notice => 'Post was successfully created.') }
+        format.html { redirect_to :action => :index }
         format.xml  { render :xml => @post, :status => :created, :location => @post }
       else
         format.html { render :action => "new" }
